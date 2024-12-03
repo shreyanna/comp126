@@ -130,4 +130,165 @@ body {
     color: inherit; /* Inherit text color from parent */
     display: block; /* Ensure the link covers the entire card */
     width: 100%;
-    height
+    height: 100%;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Add depth on hover */
+}
+
+.card p {
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #fff; /* Default white text */
+    padding: 0.5rem 1rem; /* Add padding to make it more noticeable */
+    border-radius: 5px; /* Rounded edges for hover effect */
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none; /* Explicitly remove underline */
+}
+
+.card:hover p {
+    background-color: rgba(204, 204, 204, 0.2); /* Add blue background on hover */
+    color: #fff; /* Keep the text white */
+    transform: scale(1.05); /* Slightly enlarge the text */
+}
+
+
+
+/* Content Section */
+.content {
+    background: #112240;
+    max-width: 1200px;
+    /* Limit the text width */
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    /* Center the text */
+    padding: 2rem 1rem;
+    /* Add spacing */
+    border-radius: 10px;
+    line-height: 1.8;
+    /* Improve readability */
+    text-align: left;
+    /* Align text to the left */
+    color: #fff;
+}
+
+.content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.content p {
+    margin-bottom: 1.5rem;
+    /* Add spacing between paragraphs */
+}
+
+.learn-more {
+    display: inline-block; /* Make it consistent with button-like links */
+    color: #ffffff; /* Default color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make the link visually prominent */
+    padding: 0.5rem 1rem; /* Add padding to make it visually consistent */
+    border-radius: 5px; /* Optional: Rounded edges for smoother style */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth animation */
+}
+
+.learn-more:hover {
+    color: #007bff; /* Change text color to blue on hover */
+    transform: scale(1.1); /* Slightly enlarge the text */
+}
+
+
+/* Contact Section */
+.contact-section {
+    background: url("img/contact.png") no-repeat center center/cover;
+    /* Use the specified background */
+    padding: 5rem 10rem;
+    /* Add sufficient padding for spacing */
+    text-align: left;
+    color: #fff;
+    /* Ensure text color contrasts the background */
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-section p {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.contact-form {
+    background: rgba(0, 0, 0, 0.6);
+    /* Semi-transparent black for form background */
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 700px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    /* Add depth with shadow */
+}
+
+.form-group {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-group input {
+    flex: 1;
+}
+
+input,
+textarea,
+button {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    /* Slight transparency */
+    color: #fff;
+    /* White text */
+}
+
+textarea {
+    resize: none;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px #007bff;
+}
+
+button {
+    background: #007bff;
+    /* Primary blue button */
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background: #0056b3;
+    /* Darker blue on hover */
+    transform: scale(1.05);
+    /* Slight enlarge effect */
+}
+
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background: #001f3f;
+    color: #aaa;
+    font-size: 0.8rem;
+}
