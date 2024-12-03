@@ -83,7 +83,7 @@ body {
 }
 
 .cta {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     display: inline-block;
     color: #fff;
     /* Default text color */
@@ -105,43 +105,42 @@ body {
     /* Slightly enlarge the button */
 }
 
-/* Services Section */
-/* Add spacing between the hero and the first content section */
+/* Top Page Sections */
 .services-hero {
     display: flex;
     background: url("img/dots.png") no-repeat center/cover;
     align-items: center;
-    height: 80vh;
+    height: 40rem;
     margin-bottom: 3rem;
-    /* Space below the hero section */
+}
+
+.solutions-hero {
+    display: flex;
+    background: url("img/solutions.png") no-repeat center/cover;
+    align-items: center;
+    height: 40rem;
+    margin-bottom: 3rem;
 }
 
 .services-hero h2 {
-    font-size: 5rem;
+    font-size: 2rem;
+}
+
+.solutions-hero h2 {
+    font-size: 2rem;
 }
 
 .services-hero p {
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 /* Section Title */
 .section-title {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.2rem;
     margin-bottom: 2rem;
     color: #fff;
 }
-
-/* Services Content Container */
-.services-content {
-    max-width: 80%;
-    /* Restrict the maximum width */
-    margin: 0 10rem;
-    /* Center the content */
-    text-align: left;
-    /* Optional: Align text to the left */
-}
-
 
 
 /* Individual Service Card */
@@ -158,66 +157,35 @@ body {
 
 /* Card Heading */
 .service-card h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 0.5rem;
+    color: #fff;
 }
 
 /* Card Paragraphs */
 .service-card p {
     font-size: 1rem;
     line-height: 1.6;
-    color: #aaa;
+    color: #f6f6f6;
     /* Slightly muted text color */
     margin-bottom: 1rem;
 }
 
-/* Highlighted Text */
-.service-card p em {
-    color: #007bff;
-    /* Highlighted text in blue */
-    font-style: normal;
-}
-
-
-/* Add consistent spacing between each content section */
 .services-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 3rem;
+    padding: 3rem 5%;
+    max-width: 90%;
     margin: 2rem auto;
-    /* Add vertical spacing between sections */
-    max-width: 1200px;
-    /* Ensure consistent content width */
-    padding: 2rem;
-    /* Add inner padding */
-    background: #112240;
-    /* Keep the dark blue background for sections */
-    border-radius: 10px;
-    /* Smooth edges for a clean look */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    /* Subtle shadow for depth */
-}
-
-/* Styling for individual service cards */
-.service-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-    color: #fff;
-    /* White text for headings */
-}
-
-.service-card p {
-    font-size: 1.3rem;
-    line-height: 1.6;
-    color: #ffffff;
-    /* Muted color for descriptions */
 }
 
 .service-card p em {
     color: #ffffff;
     /* Highlighted text in blue */
-    font-style: normal;
+    font-style: medium;
     /* Optional: keep emphasis but remove italic */
 }
-
-
 
 /* Info Cards */
 .info-cards {
@@ -264,7 +232,7 @@ body {
 .card p {
     margin-top: 1rem;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1rem;
     color: #fff;
     /* Default white text */
     padding: 0.5rem 1rem;
@@ -289,7 +257,7 @@ body {
     margin: 0 auto;
     margin-bottom: 3rem;
     /* Center the text */
-    padding: 5rem 20rem;
+    padding: 5rem 10rem;
     /* Add spacing */
     border-radius: 10px;
     line-height: 1.8;
@@ -300,18 +268,18 @@ body {
 }
 
 .content h3 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 
 .content p {
-    margin-bottom: 1.5rem;
-    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
     /* Add spacing between paragraphs */
 }
 
 .learn-more {
-    font-size: 2rem;
+    font-size: 1.1rem;
     display: inline-block;
     /* Make it consistent with button-like links */
     color: #ffffff;
@@ -340,7 +308,7 @@ body {
 .contact-section {
     background: url("img/contact.png") no-repeat center center/cover;
     /* Use the specified background */
-    padding: 29rem ;
+    padding: 10rem ;
     /* Add sufficient padding for spacing */
     text-align: left;
     color: #fff;
@@ -348,14 +316,14 @@ body {
 }
 
 .contact-section h2 {
-    font-size: 4rem;
+    font-size: 2rem;
     margin-bottom: 2rem;
 }
 
 .contact-section p {
     margin-bottom: 5rem;
-    font-size: 3rem;
-    line-height: 1.6;
+    font-size: 1rem;
+    line-height: 1;
 }
 
 .contact-form {
@@ -384,7 +352,7 @@ button {
     padding: 0.75rem;
     border: none;
     border-radius: 5px;
-    font-size: 2rem;
+    font-size: 1rem;
     background: rgba(255, 255, 255, 0.2);
     /* Slight transparency */
     color: #fff;
@@ -423,5 +391,5 @@ button:hover {
     padding: 1rem;
     background: #001f3f;
     color: #aaa;
-    font-size: 1.5rem;
+    font-size: 0.8rem;
 }
