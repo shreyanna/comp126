@@ -24,21 +24,18 @@ body {
 .header {
     display: flex;
     background-color: rgba(0, 31, 63, 0.1);
-    padding: 2rem 1rem 0.75rem 1rem;
+    padding: 1rem 1rem 0.75rem 1rem;
     justify-content: space-between;
 }
 
 .header h1 {
-    font-size: 1.5rem;
-    margin: 0;
+    font-size: 1rem;
 }
 
 .nav-links {
     display: flex;
     gap: 1.5rem;
     list-style: none;
-    margin: 0;
-
 }
 
 .nav-links a {
@@ -46,7 +43,7 @@ body {
     /* Default text color */
     text-decoration: none;
     /* Remove underlines */
-    font-size: 1rem;
+    font-size: 0.8rem;
     /* Font size for links */
     transition: color 0.3s ease, transform 0.3s ease;
     /* Add smooth animation for color and scale */
@@ -59,7 +56,7 @@ body {
     /* Slightly enlarge the text */
 }
 
-/* Hero Section */
+/* Home Section */
 .hero {
     background: url("img/contact.png") no-repeat center/cover;
     text-align: left;
@@ -67,14 +64,13 @@ body {
 }
 
 .hero-content {
-    max-width: 800px;
+    max-width: 80%;
     /* Restrict the maximum width */
-    margin: 0 auto;
+    margin: 0 10rem;
     /* Center the content */
     text-align: left;
     /* Optional: Align text to the left */
 }
-
 
 .hero h2 {
     font-size: 2rem;
@@ -87,30 +83,155 @@ body {
 }
 
 .cta {
+    font-size: 1.3rem;
     display: inline-block;
-    color: #fff; /* Default text color */
-    background-color: transparent; /* Optional: Default transparent background */
-    padding: 0.5rem 1rem;
-    text-decoration: none; /* Remove underline */
+    color: #fff;
+    /* Default text color */
+    background-color: transparent;
+    /* Optional: Default transparent background */
+    text-decoration: none;
+    /* Remove underline */
     border-radius: 5px;
-    transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease; /* Smooth transition for all properties */
+    transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+    /* Smooth transition for all properties */
 }
 
 .cta:hover {
-    color: #fff; /* Keep text white on hover */
-    background-color: rgba(204, 204, 204, 0.2); /* Add blue background on hover */
-    transform: scale(1.05); /* Slightly enlarge the button */
+    color: #fff;
+    /* Keep text white on hover */
+    background-color: rgba(204, 204, 204, 0.2);
+    /* Add blue background on hover */
+    transform: scale(1.05);
+    /* Slightly enlarge the button */
 }
+
+/* Services Section */
+/* Add spacing between the hero and the first content section */
+.services-hero {
+    display: flex;
+    background: url("img/dots.png") no-repeat center/cover;
+    align-items: center;
+    height: 80vh;
+    margin-bottom: 3rem;
+    /* Space below the hero section */
+}
+
+.services-hero h2 {
+    font-size: 5rem;
+}
+
+.services-hero p {
+    font-size: 2rem;
+}
+
+/* Section Title */
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+/* Services Content Container */
+.services-content {
+    max-width: 80%;
+    /* Restrict the maximum width */
+    margin: 0 10rem;
+    /* Center the content */
+    text-align: left;
+    /* Optional: Align text to the left */
+}
+
+
+
+/* Individual Service Card */
+.service-card {
+    background: #304d80;
+    /* Dark blue background for cards */
+    padding: 2rem;
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow for depth */
+    color: #fff;
+}
+
+/* Card Heading */
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Card Paragraphs */
+.service-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #aaa;
+    /* Slightly muted text color */
+    margin-bottom: 1rem;
+}
+
+/* Highlighted Text */
+.service-card p em {
+    color: #007bff;
+    /* Highlighted text in blue */
+    font-style: normal;
+}
+
+
+/* Add consistent spacing between each content section */
+.services-content {
+    margin: 2rem auto;
+    /* Add vertical spacing between sections */
+    max-width: 1200px;
+    /* Ensure consistent content width */
+    padding: 2rem;
+    /* Add inner padding */
+    background: #112240;
+    /* Keep the dark blue background for sections */
+    border-radius: 10px;
+    /* Smooth edges for a clean look */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    /* Subtle shadow for depth */
+}
+
+/* Styling for individual service cards */
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+    /* White text for headings */
+}
+
+.service-card p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: #ffffff;
+    /* Muted color for descriptions */
+}
+
+.service-card p em {
+    color: #ffffff;
+    /* Highlighted text in blue */
+    font-style: normal;
+    /* Optional: keep emphasis but remove italic */
+}
+
+
 
 /* Info Cards */
 .info-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust column width for proportional cards */
-    gap: 1.5rem; /* Better spacing between cards */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* Adjust column width for proportional cards */
+    gap: 1.5rem;
+    /* Better spacing between cards */
     padding: 2rem 1rem;
 }
 
 .card {
+    text-decoration: none;
+    /* Explicitly remove underline */
     background: url("img/dots.png") no-repeat center;
     background-size: cover;
     text-align: center;
@@ -126,46 +247,49 @@ body {
 }
 
 .card a {
-    text-decoration: none; /* Explicitly remove underline */
-    color: inherit; /* Inherit text color from parent */
-    display: block; /* Ensure the link covers the entire card */
+    color: inherit;
+    /* Inherit text color from parent */
+    display: block;
+    /* Ensure the link covers the entire card */
     width: 100%;
     height: 100%;
 }
 
 .card:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Add depth on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    /* Add depth on hover */
 }
 
 .card p {
     margin-top: 1rem;
     font-weight: bold;
-    font-size: 1rem;
-    color: #fff; /* Default white text */
-    padding: 0.5rem 1rem; /* Add padding to make it more noticeable */
-    border-radius: 5px; /* Rounded edges for hover effect */
+    font-size: 2rem;
+    color: #fff;
+    /* Default white text */
+    padding: 0.5rem 1rem;
+    /* Add padding to make it more noticeable */
+    border-radius: 5px;
+    /* Rounded edges for hover effect */
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
-    text-decoration: none; /* Explicitly remove underline */
 }
 
 .card:hover p {
-    background-color: rgba(204, 204, 204, 0.2); /* Add blue background on hover */
-    color: #fff; /* Keep the text white */
-    transform: scale(1.05); /* Slightly enlarge the text */
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Add blue background on hover */
+    color: #fff;
+    /* Keep the text white */
+    transform: scale(1.05);
+    /* Slightly enlarge the text */
 }
-
-
 
 /* Content Section */
 .content {
     background: #112240;
-    max-width: 1200px;
-    /* Limit the text width */
     margin: 0 auto;
     margin-bottom: 3rem;
     /* Center the text */
-    padding: 2rem 1rem;
+    padding: 5rem 20rem;
     /* Add spacing */
     border-radius: 10px;
     line-height: 1.8;
@@ -182,22 +306,33 @@ body {
 
 .content p {
     margin-bottom: 1.5rem;
+    font-size: 2rem;
     /* Add spacing between paragraphs */
 }
 
 .learn-more {
-    display: inline-block; /* Make it consistent with button-like links */
-    color: #ffffff; /* Default color */
-    text-decoration: none; /* Remove underline */
-    font-weight: bold; /* Make the link visually prominent */
-    padding: 0.5rem 1rem; /* Add padding to make it visually consistent */
-    border-radius: 5px; /* Optional: Rounded edges for smoother style */
-    transition: color 0.3s ease, transform 0.3s ease; /* Smooth animation */
+    font-size: 2rem;
+    display: inline-block;
+    /* Make it consistent with button-like links */
+    color: #ffffff;
+    /* Default color */
+    text-decoration: none;
+    /* Remove underline */
+    font-weight: bold;
+    /* Make the link visually prominent */
+    padding: 0.5rem 1rem;
+    /* Add padding to make it visually consistent */
+    border-radius: 5px;
+    /* Optional: Rounded edges for smoother style */
+    transition: color 0.3s ease, transform 0.3s ease;
+    /* Smooth animation */
 }
 
 .learn-more:hover {
-    color: #007bff; /* Change text color to blue on hover */
-    transform: scale(1.1); /* Slightly enlarge the text */
+    color: #007bff;
+    /* Change text color to blue on hover */
+    transform: scale(1.1);
+    /* Slightly enlarge the text */
 }
 
 
@@ -205,7 +340,7 @@ body {
 .contact-section {
     background: url("img/contact.png") no-repeat center center/cover;
     /* Use the specified background */
-    padding: 5rem 10rem;
+    padding: 29rem ;
     /* Add sufficient padding for spacing */
     text-align: left;
     color: #fff;
@@ -213,13 +348,13 @@ body {
 }
 
 .contact-section h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    font-size: 4rem;
+    margin-bottom: 2rem;
 }
 
 .contact-section p {
-    margin-bottom: 2rem;
-    font-size: 1.1rem;
+    margin-bottom: 5rem;
+    font-size: 3rem;
     line-height: 1.6;
 }
 
@@ -228,9 +363,7 @@ body {
     /* Semi-transparent black for form background */
     padding: 2rem;
     border-radius: 10px;
-    max-width: 700px;
-    margin: 0 auto;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
     /* Add depth with shadow */
 }
 
@@ -251,7 +384,7 @@ button {
     padding: 0.75rem;
     border: none;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 2rem;
     background: rgba(255, 255, 255, 0.2);
     /* Slight transparency */
     color: #fff;
@@ -269,7 +402,7 @@ textarea:focus {
 }
 
 button {
-    background: #007bff;
+    background:rgba(156, 156, 170, 0.2);
     /* Primary blue button */
     color: #fff;
     cursor: pointer;
@@ -290,5 +423,5 @@ button:hover {
     padding: 1rem;
     background: #001f3f;
     color: #aaa;
-    font-size: 0.8rem;
+    font-size: 1.5rem;
 }
